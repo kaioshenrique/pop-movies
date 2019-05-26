@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/login_navigation_graph"
+            app:startDestination="@id/loginFragment">
+
+    <action
+            android:id="@+id/irLoginFragment"
+            app:destination="@+id/loginFragment"/>
+
+    <fragment android:id="@+id/loginFragment"
+              android:name="com.kaiohenrique.popmovies.ui.login.LoginFragment"
+              android:label="Login"
+              tools:layout="@layout/fragment_login">
+        <action
+                android:id="@+id/irSignUpFragment"
+                app:destination="@+id/signUpFragment"/>
+    </fragment>
+
+    <fragment android:id="@+id/signUpFragment"
+              android:name="com.kaiohenrique.popmovies.ui.login.SignUpFragment"
+              android:label="Sign Up"
+              tools:layout="@layout/fragment_sign_up"/>
+</navigation>
