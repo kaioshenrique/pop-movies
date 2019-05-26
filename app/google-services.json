@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "666740369480",
+    "firebase_url": "https://pop-movies-study.firebaseio.com",
+    "project_id": "pop-movies-study",
+    "storage_bucket": "pop-movies-study.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:666740369480:android:3d4e309c82af15e3",
+        "android_client_info": {
+          "package_name": "com.kaiohenrique.popmovies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "666740369480-551lp8cmu5ittg2a0m2h61r12guiofkg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kaiohenrique.popmovies",
+            "certificate_hash": "c7b0bffcfae823e31afa368e199630415d8a5733"
+          }
+        },
+        {
+          "client_id": "666740369480-06dl2bqj6hdmhcnjt6sa812c8568iidc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhKfvgW1_uT_kcxF5jZ5vaGUO_B2vrOa0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "666740369480-06dl2bqj6hdmhcnjt6sa812c8568iidc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

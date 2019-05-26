@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'androidx.navigation.safeargs'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion versions.sdk.compile
+
+    defaultConfig {
+        applicationId "com.kaiohenrique.popmovies"
+        minSdkVersion versions.sdk.min
+        targetSdkVersion versions.sdk.target
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    // Kotlin
+    implementation deps.kotlin.coroutines
+    implementation deps.kotlin.stdlib
+    implementation deps.kotlin.adapter
+
+    // Firebase
+    implementation deps.firebase.auth
+    implementation deps.firebase.core
+
+    // AndroidX
+    implementation deps.androidx.core
+    implementation deps.androidx.constraintLayout
+    implementation deps.androidx.emoji
+
+    // Google Material
+    implementation deps.google.material
+
+    // Android LiveData e ViewModel
+    implementation deps.androidx.lifecycle.extensions
+
+    // Android Navigation
+    implementation deps.androidx.navigation.fragment
+    implementation deps.androidx.navigation.ui
+
+    // Android Multidex
+    implementation deps.androidx.multidex
+
+    // Koin
+    implementation deps.koin.android
+    implementation deps.koin.androidViewModel
+
+    // Tests
+    testImplementation deps.tests.junit
+    testImplementation deps.tests.mockito.kotlin
+
+    androidTestImplementation deps.tests.android.ext
+    androidTestImplementation deps.tests.android.rules
+    androidTestImplementation deps.tests.android.runner
+    androidTestImplementation deps.tests.junit
+}
